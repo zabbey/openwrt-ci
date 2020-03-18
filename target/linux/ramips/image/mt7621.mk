@@ -632,6 +632,14 @@ define Device/wsr-600
 endef
 TARGET_DEVICES += wsr-600
 
+define Device/xy-c5
+  DTS := XY-C5
+  IMAGE_SIZE := $(ralink_default_fw_size_32M)
+  DEVICE_TITLE := XiaoYu XY-C5
+  DEVICE_PACKAGES := kmod-ata-ahci kmod-usb3
+endef
+TARGET_DEVICES += xy-c5
+
 define Device/zbt-we1326
   DTS := ZBT-WE1326
   IMAGE_SIZE := $(ralink_default_fw_size_16M)
